@@ -1,0 +1,13 @@
+{
+  "ids": {
+    "User": 5
+  },
+  "models": {
+    "User": {
+      "1": "{\"deleted\":false,\"deletedOn\":\"2021-02-09T13:45:41.798Z\",\"deletedBy\":\"\",\"firstName\":\"d\",\"email\":\"dur@sf.com\",\"middleName\":\"j\",\"lastName\":\"r\",\"phoneNumber\":\"\",\"address\":\"\",\"createdOn\":\"2021-02-09T13:46:14.452Z\",\"modifiedOn\":\"2021-02-09T13:46:14.452Z\",\"isDeleted\":false,\"customerId\":\"\",\"id\":\"1\"}",
+      "2": "{\"deleted\":false,\"deletedOn\":\"2021-02-10T05:32:04.149Z\",\"deletedBy\":\"\",\"firstName\":\"durgesh\",\"email\":\"dur@sf.com\",\"middleName\":\"j\",\"lastName\":\"r\",\"phoneNumber\":\"\",\"address\":\"\",\"createdOn\":\"2021-02-10T05:32:35.527Z\",\"modifiedOn\":\"2021-02-10T05:32:35.527Z\",\"isDeleted\":false,\"customerId\":\"1\",\"id\":\"2\"}",
+      "3": "{\"deleted\":true,\"deletedOn\":\"2021-02-10T07:22:43.412Z\",\"deletedBy\":\"string\",\"firstName\":\"string\",\"email\":\"string\",\"middleName\":\"string\",\"lastName\":\"string\",\"phoneNumber\":\"string\",\"address\":\"string\",\"createdOn\":\"2021-02-10T07:22:47.164Z\",\"modifiedOn\":\"2021-02-10T07:22:47.164Z\",\"isDeleted\":true,\"customerId\":\"string\",\"id\":\"3\"}",
+      "4": "{\"deleted\":true,\"deletedOn\":\"2021-02-10T08:18:32.420Z\",\"deletedBy\":\"string\",\"firstName\":\"string\",\"email\":\"string\",\"middleName\":\"string\",\"lastName\":\"string\",\"phoneNumber\":\"string\",\"address\":\"string\",\"createdOn\":\"2021-02-10T08:18:44.934Z\",\"modifiedOn\":\"2021-02-10T08:18:44.934Z\",\"isDeleted\":true,\"customerId\":\"string\",\"id\":\"4\"}"
+    }
+  }
+}
