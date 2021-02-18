@@ -1,31 +1,37 @@
-import {Entity, model, property} from '@loopback/repository';
+import { Entity, model, property } from "@loopback/repository";
 
-@model({settings: {strict: false}})
+@model({ settings: { strict: false } })
 export class Role extends Entity {
-
   @property({
-    type: 'string',
+    type: "string",
     id: true,
     generated: true,
   })
   id?: string;
-  
+
   @property({
-    type: 'string',
+    type: "string",
     required: true,
   })
   name: string;
 
   @property({
-    type: 'string',
+    type: "string",
     required: true,
   })
   key: string;
 
   @property({
-    type: 'string',
+    type: "string",
   })
   userId?: string;
+
+  @property({
+    type: "array",
+    itemType: "string",
+  })
+  permission: string[];
+
   // Define well-known properties here
 
   // Indexer property to allow additional data

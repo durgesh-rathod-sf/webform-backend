@@ -1,16 +1,15 @@
-import {extensionFor} from '@loopback/core';
+import { extensionFor } from "@loopback/core";
 import {
   format,
   LoggingBindings,
   WinstonFormat,
-  WinstonLoggerOptions,
   WinstonTransports,
   WINSTON_FORMAT,
   WINSTON_TRANSPORT,
-} from '@loopback/logging';
-import {ApplicationConfig, WebformBackendApplication} from './application';
+} from "@loopback/logging";
+import { ApplicationConfig, WebformBackendApplication } from "./application";
 
-export * from './application';
+export * from "./application";
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new WebformBackendApplication(options);
@@ -22,43 +21,43 @@ export async function main(options: ApplicationConfig = {}) {
   });
 
   app.configure(LoggingBindings.FLUENT_SENDER).to({
-    host: process.env.FLUENTD_SERVICE_HOST ?? 'localhost',
+    host: process.env.FLUENTD_SERVICE_HOST ?? "localhost",
     port: +(process.env.FLUENTD_SERVICE_PORT_TCP ?? 24224),
     timeout: 3.0,
     reconnectInterval: 600000, // 10 minutes
   });
   app.configure(LoggingBindings.WINSTON_LOGGER).to({
-    level: 'info',
+    level: "info",
     format: format.json(),
-    defaultMeta: {framework: 'LoopBack'},
+    defaultMeta: { framework: "LoopBack" },
   });
 
-  let myFormat: WinstonFormat = format((info, opts) => {
+  const myFormat: WinstonFormat = format((info, opts) => {
     console.log(info);
     return false;
   })();
 
   app
-    .bind('logging.winston.formats.myFormat')
+    .bind("logging.winston.formats.myFormat")
     .to(myFormat)
     .apply(extensionFor(WINSTON_FORMAT));
   app
-    .bind('logging.winston.formats.colorize')
+    .bind("logging.winston.formats.colorize")
     .to(format.colorize())
     .apply(extensionFor(WINSTON_FORMAT));
 
   const consoleTransport = new WinstonTransports.Console({
-    level: 'info',
+    level: "info",
     format: format.combine(format.colorize(), format.simple()),
   });
   app
-    .bind('logging.winston.transports.console')
+    .bind("logging.winston.transports.console")
     .to(consoleTransport)
     .apply(extensionFor(WINSTON_TRANSPORT));
 
   app
     .configure(LoggingBindings.WINSTON_HTTP_ACCESS_LOGGER)
-    .to({format: 'combined'});
+    .to({ format: "combined" });
 
   const url = app.restServer.url;
   console.log(`Server is running at ${url}`);
@@ -71,15 +70,6 @@ if (require.main === module) {
   // Run the application
   const config = {
     rest: {
-      cors: {
-        origin: '*',
-        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-        preflightContinue: false,
-        optionsSuccessStatus: 204,
-        maxAge: 86400,
-        credentials: true,
-      },
-
       port: +(process.env.PORT ?? 3000),
       host: process.env.HOST,
       // The `gracePeriodForClose` provides a graceful close for http/https
@@ -94,8 +84,8 @@ if (require.main === module) {
       },
     },
   };
-  main(config).catch(err => {
-    console.error('Cannot start the application.', err);
+  main(config).catch((err) => {
+    console.error("Cannot start the application.", err);
     process.exit(1);
   });
 }

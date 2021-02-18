@@ -5,7 +5,7 @@ export function setCreatedOn() {
     propertyKey: string,
     descriptor: PropertyDescriptor,
   ) {
-    let origMethod = descriptor.value;
+    const origMethod = descriptor.value;
     descriptor.value = function (...args: any) {
       console.log('args is ', args);
       args[0].createdOn = new Date().toISOString();
@@ -22,7 +22,7 @@ export function setUpdatedOn() {
     descriptor: PropertyDescriptor,
   ) {
     console.log('setUpdatedOn called');
-    let origMethod = descriptor.value;
+    const origMethod = descriptor.value;
     descriptor.value = function (...args: any) {
       console.log('args is ', args);
       // args[0].createdOn = new Date().toISOString();

@@ -1,13 +1,18 @@
 {
   "ids": {
-    "User": 5
+    "User": 8,
+    "AuthClient": 1
   },
   "models": {
     "User": {
       "1": "{\"deleted\":false,\"deletedOn\":\"2021-02-09T13:45:41.798Z\",\"deletedBy\":\"\",\"firstName\":\"d\",\"email\":\"dur@sf.com\",\"middleName\":\"j\",\"lastName\":\"r\",\"phoneNumber\":\"\",\"address\":\"\",\"createdOn\":\"2021-02-09T13:46:14.452Z\",\"modifiedOn\":\"2021-02-09T13:46:14.452Z\",\"isDeleted\":false,\"customerId\":\"\",\"id\":\"1\"}",
       "2": "{\"deleted\":false,\"deletedOn\":\"2021-02-10T05:32:04.149Z\",\"deletedBy\":\"\",\"firstName\":\"durgesh\",\"email\":\"dur@sf.com\",\"middleName\":\"j\",\"lastName\":\"r\",\"phoneNumber\":\"\",\"address\":\"\",\"createdOn\":\"2021-02-10T05:32:35.527Z\",\"modifiedOn\":\"2021-02-10T05:32:35.527Z\",\"isDeleted\":false,\"customerId\":\"1\",\"id\":\"2\"}",
       "3": "{\"deleted\":true,\"deletedOn\":\"2021-02-10T07:22:43.412Z\",\"deletedBy\":\"string\",\"firstName\":\"string\",\"email\":\"string\",\"middleName\":\"string\",\"lastName\":\"string\",\"phoneNumber\":\"string\",\"address\":\"string\",\"createdOn\":\"2021-02-10T07:22:47.164Z\",\"modifiedOn\":\"2021-02-10T07:22:47.164Z\",\"isDeleted\":true,\"customerId\":\"string\",\"id\":\"3\"}",
-      "4": "{\"deleted\":true,\"deletedOn\":\"2021-02-10T08:18:32.420Z\",\"deletedBy\":\"string\",\"firstName\":\"string\",\"email\":\"string\",\"middleName\":\"string\",\"lastName\":\"string\",\"phoneNumber\":\"string\",\"address\":\"string\",\"createdOn\":\"2021-02-10T08:18:44.934Z\",\"modifiedOn\":\"2021-02-10T08:18:44.934Z\",\"isDeleted\":true,\"customerId\":\"string\",\"id\":\"4\"}"
-    }
+      "4": "{\"deleted\":true,\"deletedOn\":\"2021-02-10T08:18:32.420Z\",\"deletedBy\":\"string\",\"firstName\":\"string\",\"email\":\"string\",\"middleName\":\"string\",\"lastName\":\"string\",\"phoneNumber\":\"string\",\"address\":\"string\",\"createdOn\":\"2021-02-10T08:18:44.934Z\",\"modifiedOn\":\"2021-02-10T08:18:44.934Z\",\"isDeleted\":true,\"customerId\":\"string\",\"id\":\"4\"}",
+      "5": "{\"deleted\":false,\"deletedOn\":\"2021-02-11T14:32:58.888Z\",\"deletedBy\":\"string\",\"firstName\":\"string\",\"email\":\"string\",\"middleName\":\"string\",\"lastName\":\"string\",\"username\":\"admin\",\"password\":\"admin123\",\"phoneNumber\":\"string\",\"address\":\"string\",\"createdOn\":\"2021-02-11T14:34:09.767Z\",\"modifiedOn\":\"2021-02-11T14:34:09.767Z\",\"isDeleted\":false,\"customerId\":\"string\",\"id\":\"5\"}",
+      "6": "{\"deleted\":false,\"deletedOn\":\"2021-02-12T06:38:45.282Z\",\"deletedBy\":\"string\",\"firstName\":\"dadmin\",\"email\":\"string\",\"middleName\":\"string\",\"lastName\":\"string\",\"username\":\"string\",\"password\":\"admin123\",\"phoneNumber\":\"string\",\"address\":\"string\",\"createdOn\":\"2021-02-12T06:41:00.730Z\",\"modifiedOn\":\"2021-02-12T06:41:00.730Z\",\"isDeleted\":false,\"customerId\":\"string\",\"id\":\"6\"}",
+      "7": "{\"deleted\":false,\"deletedOn\":\"2021-02-15T11:07:02.765Z\",\"deletedBy\":\"string\",\"firstName\":\"durgeshr\",\"email\":\"string\",\"middleName\":\"string\",\"lastName\":\"string\",\"username\":\"durgeshr\",\"password\":\"admin123\",\"phoneNumber\":\"string\",\"address\":\"string\",\"createdOn\":\"2021-02-15T11:08:07.822Z\",\"modifiedOn\":\"2021-02-15T11:08:07.822Z\",\"isDeleted\":false,\"customerId\":\"string\",\"id\":\"7\"}"
+    },
+    "AuthClient": {}
   }
 }

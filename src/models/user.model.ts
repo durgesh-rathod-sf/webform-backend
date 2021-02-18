@@ -16,7 +16,7 @@ export class User extends SoftDeleteEntity {
     id: true,
     generated: true,
   })
-  id?: string;
+  id: string;
 
   @property({
     type: 'string',
@@ -32,6 +32,16 @@ export class User extends SoftDeleteEntity {
     type: 'string',
   })
   lastName?: string;
+
+  @property({
+    type: 'string',
+  })
+  username: string;
+
+  @property({
+    type: 'string',
+  })
+  password: string;
 
   @property({
     type: 'string',
